@@ -15,6 +15,7 @@ jobs:
       - run: sudo apt update -y
       - run: sudo apt install nodejs -y
       - run: sudo apt install npm -y
+      - run: npm test
   automerge:
     needs: build
     runs-on: ubuntu-latest
