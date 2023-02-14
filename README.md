@@ -1,5 +1,8 @@
 # Aprendendo o Dependabot
 
+[![CI](https://github.com/nataliagranato/learning-dependabot/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/nataliagranato/learning-dependabot/actions/workflows/main.yml)
+
+
 
 Este repositório é dedicado ao aprendizado sobre como usar o Dependabot para automatizar atualizações de dependências em um projeto de software.
 
