@@ -1,5 +1,17 @@
 # Getting Started with Create React App
 
+> Security note: `postcss` patched via `overrides` in `package.json`
+
+This project forces `postcss@8.4.31` using the `overrides` field in `package.json` to mitigate a known PostCSS vulnerability (CVE affecting versions < 8.4.31). To reproduce the install and verify, run:
+
+```
+cd my-app
+npm install
+npm audit
+```
+
+If you use Yarn (v1) instead, consider using `resolutions` or upgrading `react-scripts` to a version that resolves `postcss >= 8.4.31`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
