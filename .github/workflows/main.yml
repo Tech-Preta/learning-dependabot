@@ -20,11 +20,12 @@ jobs:
   automerge:
     needs: build
     runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.actor == 'dependabot[bot]'
     permissions:
       pull-requests: write
       contents: write
     steps:
-      - uses: fastify/github-action-merge-dependabot@main
+      - uses: fastify/github-action-merge-dependabot@v3
         with:
-          github-token: ${{ secrets.PAT_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           target: minor
